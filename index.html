@@ -1,0 +1,205 @@
+<html>
+
+<head>
+	<style> 
+	* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: rgb(231, 227, 227);
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  color: rgb(83, 21, 33);
+  margin-top: 50px;
+}
+.header1 {
+  display: flex;
+  justify-content: center;
+  color: rgb(83, 21, 33);
+}
+
+.koyu {
+  display: flex;
+  justify-content: center;
+  background-color: #dab3e988;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+table {
+  margin: 10px;
+  border: 1px solid #000;
+  background-color: #b700ff;
+}
+
+tr:first-child td {
+  border-top-color: #000000;
+}
+
+tr:nth-child(3n) td {
+  border-bottom-color: #000000;
+}
+
+tr:nth-child(4) td {
+  border-top-color: #000000;
+}
+
+tr:nth-child(7) td {
+  border-top-color: #000000;
+}
+
+td {
+  border: 1px solid #d3d3d3;
+  height: 40px;
+  width: 40px;
+}
+
+td:first-child {
+  border-left-color: #000000;
+}
+
+td:nth-child(3n) {
+  border-right-color: #000000;
+}
+
+input {
+  padding: 0;
+  text-align: center;
+  border: 0;
+  outline: none;
+  height: 40px;
+  width: 40px;
+}
+
+input:hover {
+  background: #6bca88;
+}
+</style>
+
+</head>
+
+<body>
+	<div class="header">
+
+		<h1>Sudoku </h1>
+	</div>
+	<div class="main">
+		<table>
+			<tbody>
+				<tr>
+					<td><input type="text" value="5" contenteditable /></td>
+					<td><input type="text" value="3" contenteditable /></td>
+					<td><input type="text" value="4" disabled /></td>
+					<td><input class="koyu" type="text" value="6" contenteditable /></td>
+					<td><input class="koyu"type="text" value="7" contenteditable /></td>
+					<td><input class="koyu"type="text" value="8" contenteditable /></td>
+					<td><input type="text" value="9" disabled /></td>
+					<td><input type="text" value="1" contenteditable /></td>
+					<td><input type="text" value="2" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value="6" disabled /></td>
+					<td><input type="text" value="7" contenteditable /></td>
+					<td><input type="text" value="2" contenteditable /></td>
+					<td><input class="koyu"type="text" value="1" disabled /></td>
+					<td><input class="koyu"type="text" value="9" contenteditable /></td>
+					<td><input class="koyu"type="text" value="5" disabled /></td>
+					<td><input type="text" value="3" contenteditable /></td>
+					<td><input type="text" value="4" contenteditable /></td>
+					<td><input type="text" value="8" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value="1" contenteditable /></td>
+					<td><input type="text" value="9" contenteditable /></td>
+					<td><input type="text" value="8" disabled/></td>
+					<td><input class="koyu"type="text" value="3" contenteditable /></td>
+					<td><input class="koyu"type="text" value="4" disabled /></td>
+					<td><input class="koyu"type="text" value="2" contenteditable /></td>
+					<td><input type="text" value="5" contenteditable /></td>
+					<td><input type="text" value="6" disabled /></td>
+					<td><input type="text" value="7" disabled /></td>
+				</tr>
+				<tr>
+					<td><input class="koyu"type="text" value="8" disabled /></td>
+					<td><input class="koyu"type="text" value="5" contenteditable /></td>
+					<td><input class="koyu"type="text" value="9" contenteditable /></td>
+					<td><input type="text" value="7" contenteditable /></td>
+					<td><input type="text" value="6" contenteditable /></td>
+					<td><input type="text" value="1" disabled /></td>
+					<td><input class="koyu"type="text" value="4" disabled /></td>
+					<td><input class="koyu"type="text" value="2" disabled /></td>
+					<td><input class="koyu"type="text" value="3" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input class="koyu" type="text" value="4" contenteditable /></td>
+					<td><input class="koyu"type="text" value="2" contenteditable /></td>
+					<td><input class="koyu"type="text" value="6" disabled /></td>
+					<td><input type="text" value="8" contenteditable /></td>
+					<td><input type="text" value="5" disabled /></td>
+					<td><input type="text" value="3" contenteditable /></td>
+					<td><input class="koyu"type="text" value="7" disabled /></td>
+					<td><input class="koyu"type="text" value="9" contenteditable /></td>
+					<td><input class="koyu"type="text" value="1" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input class="koyu"type="text" value="7" disabled /></td>
+					<td><input class="koyu"type="text" value="1" disabled /></td>
+					<td><input class="koyu"type="text" value="3" contenteditable /></td>
+					<td><input type="text" value="9" disabled /></td>
+					<td><input type="text" value="2" contenteditable /></td>
+					<td><input type="text" value="4" disabled /></td>
+					<td><input class="koyu" type="text" value="8" contenteditable /></td>
+					<td><input class="koyu" type="text" value="5" contenteditable /></td>
+					<td><input class="koyu" type="text" value="6" disabled /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value="9" contenteditable /></td>
+					<td><input type="text" value="6" disabled /></td>
+					<td><input type="text" value="1" contenteditable /></td>
+					<td><input class="koyu"type="text" value="5" disabled /></td>
+					<td><input class="koyu"type="text" value="3" contenteditable /></td>
+					<td><input class="koyu"type="text" value="7" contenteditable /></td>
+					<td><input type="text" value="2" contenteditable /></td>
+					<td><input type="text" value="8" contenteditable /></td>
+					<td><input type="text" value="4" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value="2" disabled /></td>
+					<td><input type="text" value="8" contenteditable /></td>
+					<td><input type="text" value="7" disabled /></td>
+					<td><input class="koyu"type="text" value="4" contenteditable /></td>
+					<td><input class="koyu"type="text" value="1" disabled /></td>
+					<td><input class="koyu"type="text" value="9" contenteditable /></td>
+					<td><input type="text" value="6" disabled /></td>
+					<td><input type="text" value="3" contenteditable /></td>
+					<td><input type="text" value="5" contenteditable /></td>
+				</tr>
+				<tr>
+					<td><input type="text" value="3" contenteditable /></td>
+					<td><input type="text" value="4" disabled /></td>
+					<td><input type="text" value="5" contenteditable  /></td>
+					<td><input class="koyu"type="text" value="2" disabled  /></td>
+					<td><input class="koyu"type="text" value="8" contenteditable  /></td>
+					<td><input class="koyu"type="text" value="6" contenteditable  /></td>
+					<td><input type="text" value="1" contenteditable  /></td>
+					<td><input type="text" value="7" disabled  /></td>
+					<td><input type="text" value="9" disabled/></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+  <div class="header1">
+  <h4> <i>Coded by: Emine ADAM </h4> </div>
+
+  <div class="header1"> 
+  <span> <h6> © 2023 all right reserved.</span>
+  </div>
+
+</body>
+</html>
